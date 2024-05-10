@@ -10,8 +10,19 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.9.26",
+    "@shopify/flash-list": "^1.6.4",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-native": "0.74.1",
+    "react-native-gesture-handler": "^2.16.2",
+    "react-native-modal": "^13.0.1",
+    "react-native-reanimated": "^3.11.0",
+    "react-native-safe-area-context": "^4.10.1",
+    "react-native-screens": "^3.31.1",
+    "react-native-story-view": "^3.1.0",
+    "react-native-video": "^5.2.1",
+    "react-native-video-cache-control": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
