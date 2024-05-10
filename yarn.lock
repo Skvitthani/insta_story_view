@@ -3121,6 +3121,7 @@ __metadata:
     prettier: 2.8.8
     react: 18.2.0
     react-native: 0.74.1
+    react-native-flexible-grid: ^0.1.8
     react-native-gesture-handler: ^2.16.2
     react-native-modal: ^13.0.1
     react-native-reanimated: ^3.11.0
@@ -8150,6 +8151,16 @@ __metadata:
   dependencies:
     prop-types: ^15.7.2
   checksum: eb35821de36ae4eb00f97d99fc22ed79bd017248092ff1299f9d46a7ab946de16d2e6d6bfbf4cab5ef77d0d3bf47684aec761a7670ec7d36aae8d77ab8ddd171
+  languageName: node
+  linkType: hard
+
+"react-native-flexible-grid@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "react-native-flexible-grid@npm:0.1.8"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: d6a95b3ab1ea0c4e1621cf2f35da5c11d44fdc3947d5678f18538ad861e87b329650dc16d30b96b959b3f0c7482866e915659f0981a7e3b3b825d2b2b0e97247
   languageName: node
   linkType: hard
 
