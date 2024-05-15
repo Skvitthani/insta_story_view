@@ -61,19 +61,6 @@ const MultiStoryScreen = () => {
           },
         }}
       />
-      {/* <MultiStoryContainer
-        isShowReply
-        maxVideoDuration={10}
-        progressIndex={5}
-        viewedStories={[]}
-        stories={SingleStoryData}
-        visible={showCurrentUserStroy}
-        enableProgress={true}
-        renderFooterComponent={({progressIndex}) => {
-          return <FooterComponents progrssIndex={progressIndex} />;
-        }}
-        onComplete={() => setShowCurrentUserStory(false)}
-      /> */}
     </View>
   );
 };

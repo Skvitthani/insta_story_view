@@ -1,4 +1,5 @@
 import React from 'react';
+import CameraScreen from '../screens/CameraScreen';
 import DiscoverScreen from '../screens/DiscoverScreen';
 import MultiStoryScreen from '../screens/MultiStoryScreen';
 import SingleStoryScreen from '../screens/SingleStoryScreen';
@@ -6,6 +7,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
+  CameraScreen: undefined;
   DiscoverScreen: undefined;
   MultiStoryScreen: undefined;
   SingleStoryScreen: undefined;
@@ -17,6 +19,7 @@ const SatckNavigation = () => {
   return (
     <NavigationContainer>
       <Satck.Navigator screenOptions={{headerShown: false}}>
+        <Satck.Screen name="CameraScreen" component={CameraScreen} />
         <Satck.Screen
           name="DiscoverScreen"
           component={DiscoverScreen}

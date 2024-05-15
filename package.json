@@ -7,12 +7,15 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
     "@shopify/flash-list": "^1.6.4",
+    "add": "^2.0.6",
+    "patch-package": "^8.0.0",
     "react": "18.2.0",
     "react-native": "0.74.1",
     "react-native-flexible-grid": "^0.1.8",
@@ -23,7 +26,9 @@
     "react-native-screens": "^3.31.1",
     "react-native-story-view": "^3.1.0",
     "react-native-video": "^5.2.1",
-    "react-native-video-cache-control": "^1.2.2"
+    "react-native-video-cache-control": "^1.2.2",
+    "react-native-vision-camera": "^4.0.3",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
