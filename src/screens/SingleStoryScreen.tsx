@@ -11,7 +11,7 @@ import {useNavigation} from '@react-navigation/native';
 import {SingleStoryData} from '../utils/SingleStoryData';
 import FooterComponents from '../components/FooterComponents';
 import {StoryContainer, StoryRef} from 'react-native-story-view';
-import {RootStackParamList} from '../navigation/SatckNavigation';
+import {RootStackParamList} from '../navigation/StackNavigation';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 const deviceHeight = Dimensions.get('window').height;
@@ -58,10 +58,10 @@ const SingleStoryScreen = () => {
         imageStyle={styles.storyImageStyle}
         renderCustomView={() => (
           <TouchableOpacity onPress={() => navigation.goBack()}>
-            <View style={styles.cancleImageView}>
+            <View style={styles.cancelImageView}>
               <Image
                 source={require('../assets/cancel.png')}
-                style={styles.cancleImageStyle}
+                style={styles.cancelImageStyle}
               />
             </View>
           </TouchableOpacity>
@@ -70,7 +70,7 @@ const SingleStoryScreen = () => {
           return (
             <FooterComponents
               setIsProgressIndex={setIsProgressIndex}
-              progrssIndex={progressIndex}
+              progressIndex={progressIndex}
               showBottomSheet={showBottomSheet}
               setShowBottomSheet={setShowBottomSheet}
             />
@@ -92,12 +92,12 @@ const SingleStoryScreen = () => {
 export default SingleStoryScreen;
 
 const styles = StyleSheet.create({
-  cancleImageView: {
+  cancelImageView: {
     top: 40,
     right: 15,
     position: 'absolute',
   },
-  cancleImageStyle: {
+  cancelImageStyle: {
     height: 25,
     width: 25,
     tintColor: 'white',

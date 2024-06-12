@@ -1,8 +1,8 @@
 import React from 'react';
-import SatckNavigation from './src/navigation/SatckNavigation';
+import StackNavigation from './src/navigation/StackNavigation';
 
 const App = () => {
-  return <SatckNavigation />;
+  return <StackNavigation />;
 };
 
 export default App;

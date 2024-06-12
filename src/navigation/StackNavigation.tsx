@@ -13,23 +13,23 @@ export type RootStackParamList = {
   SingleStoryScreen: undefined;
 };
 
-const Satck = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
-const SatckNavigation = () => {
+const StackNavigation = () => {
   return (
     <NavigationContainer>
-      <Satck.Navigator screenOptions={{headerShown: false}}>
-        <Satck.Screen name="CameraScreen" component={CameraScreen} />
-        <Satck.Screen
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="CameraScreen" component={CameraScreen} />
+        <Stack.Screen
           name="DiscoverScreen"
           component={DiscoverScreen}
           options={{headerShown: true}}
         />
-        <Satck.Screen name="MultiStoryScreen" component={MultiStoryScreen} />
-        <Satck.Screen name="SingleStoryScreen" component={SingleStoryScreen} />
-      </Satck.Navigator>
+        <Stack.Screen name="MultiStoryScreen" component={MultiStoryScreen} />
+        <Stack.Screen name="SingleStoryScreen" component={SingleStoryScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default SatckNavigation;
+export default StackNavigation;

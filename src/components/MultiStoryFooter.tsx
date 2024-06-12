@@ -25,7 +25,7 @@ const MultiStoryFooter = () => {
   ];
 
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
-  const inpuyt = useRef(null);
+  const input = useRef(null);
 
   useEffect(() => {
     const keyboardDidShowSubscription = Keyboard.addListener(
@@ -62,12 +62,12 @@ const MultiStoryFooter = () => {
           data={ReactionData}
           renderItem={renderItem}
           style={{marginBottom: 120}}
-          contentContainerStyle={styles.contentConatinerStyle}
+          contentContainerStyle={styles.contentContainerStyle}
         />
       )}
       <View style={styles.bottomContainer}>
         <TextInput
-          ref={inpuyt}
+          ref={input}
           style={styles.inputText}
           placeholder="Send message"
           placeholderTextColor={'#777A80'}
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     borderRadius: 54,
     backgroundColor: '#fff',
   },
-  contentConatinerStyle: {
+  contentContainerStyle: {
     alignItems: 'center',
   },
   bottomContainer: {

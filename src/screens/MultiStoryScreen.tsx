@@ -10,7 +10,7 @@ import React, {useRef} from 'react';
 import {userStories} from '../utils/StoryData';
 import {useNavigation} from '@react-navigation/native';
 import MultiStoryFooter from '../components/MultiStoryFooter';
-import {RootStackParamList} from '../navigation/SatckNavigation';
+import {RootStackParamList} from '../navigation/StackNavigation';
 import {MultiStory, MultiStoryRef} from 'react-native-story-view';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     height: deviceHeight * 0.052,
     width: deviceHeight * 0.052,
   },
-  contentConatinerStyle: {
+  contentContainerStyle: {
     alignItems: 'center',
   },
   modalView: {

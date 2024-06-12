@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Animated, {interpolate, useAnimatedStyle} from 'react-native-reanimated';
 
-const CameraTab = ({item, x, index, size, spacer, customeTextStyle}) => {
+const CameraTab = ({item, x, index, size, spacer, customTextStyle}) => {
   const style = useAnimatedStyle(() => {
     const scale = interpolate(
       x.value,
@@ -25,7 +25,7 @@ const CameraTab = ({item, x, index, size, spacer, customeTextStyle}) => {
       }}
       key={index}>
       <Animated.View style={[style]}>
-        <Text style={[customeTextStyle]}>{item?.name}</Text>
+        <Text style={[customTextStyle]}>{item?.name}</Text>
       </Animated.View>
     </View>
   );

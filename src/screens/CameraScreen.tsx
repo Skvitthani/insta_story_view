@@ -119,7 +119,7 @@ const CameraScreen = () => {
           onPress={() => {
             setClickedPhoto('');
           }}>
-          <Text style={styles.closwButtonText}>Close</Text>
+          <Text style={styles.closeButtonText}>Close</Text>
         </Pressable>
       </View>
     );
@@ -208,7 +208,7 @@ const CameraScreen = () => {
                   x={x}
                   size={SIZE}
                   spacer={SPACER}
-                  customeTextStyle={{
+                  customTextStyle={{
                     color: activeTab === item.name ? '#FFFFFF' : '#EAEAEA',
                     fontSize: 15,
                   }}
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'gray',
   },
-  closwButtonText: {
+  closeButtonText: {
     color: 'white',
   },
 });

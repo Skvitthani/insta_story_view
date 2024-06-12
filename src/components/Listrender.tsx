@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 
-const Listrender = ({
+const ListRender = ({
   item,
   index,
 }: {
@@ -26,6 +26,6 @@ const Listrender = ({
   );
 };
 
-export default Listrender;
+export default ListRender;
 
 const styles = StyleSheet.create({});

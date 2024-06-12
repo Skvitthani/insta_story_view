@@ -13,7 +13,7 @@ import Animated, {
   useSharedValue,
   useAnimatedScrollHandler,
 } from 'react-native-reanimated';
-import Listrender from './Listrender';
+import ListRender from './ListRender';
 import Modal from 'react-native-modal';
 import React, {useEffect} from 'react';
 import CustomImage from './CustomImage';
@@ -24,7 +24,7 @@ import {AnimatedScrollView} from 'react-native-reanimated/lib/typescript/reanima
 const deviceHeight = Dimensions.get('window').height;
 
 interface props {
-  progrssIndex: number;
+  progressIndex: number;
   showBottomSheet: boolean;
   setIsProgressIndex: React.Dispatch<React.SetStateAction<number>>;
   setShowBottomSheet: React.Dispatch<React.SetStateAction<boolean>>;
@@ -32,7 +32,7 @@ interface props {
 
 const FooterComponents = (props: props) => {
   const {
-    progrssIndex,
+    progressIndex,
     showBottomSheet,
     setShowBottomSheet,
     setIsProgressIndex,
@@ -83,11 +83,11 @@ const FooterComponents = (props: props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      const index = progrssIndex + 2;
+      const index = progressIndex + 2;
       const _offSet = index * SIZE - SPACER;
       scrollViewRef.current?.scrollTo({x: _offSet, y: 0, animated: true});
     }, 500);
-  }, [showBottomSheet, progrssIndex]);
+  }, [showBottomSheet, progressIndex]);
 
   return (
     <View>
@@ -122,10 +122,10 @@ const FooterComponents = (props: props) => {
                     x={x}
                     size={SIZE}
                     spacer={SPACER}
-                    customeImageStyle={{
-                      borderWidth: progrssIndex + 1 == index ? 5 : 0,
+                    customImageStyle={{
+                      borderWidth: progressIndex + 1 == index ? 5 : 0,
                       borderColor:
-                        progrssIndex + 1 == index ? 'white' : 'transparent',
+                        progressIndex + 1 == index ? 'white' : 'transparent',
                     }}
                   />
                 );
@@ -137,7 +137,7 @@ const FooterComponents = (props: props) => {
               <FlatList
                 data={UserData}
                 renderItem={({item, index}) => {
-                  return <Listrender index={index} item={item} />;
+                  return <ListRender index={index} item={item} />;
                 }}
                 ListHeaderComponent={ListHeaderComponent}
                 showsVerticalScrollIndicator={false}
